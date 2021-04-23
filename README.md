@@ -160,3 +160,197 @@ Entonces el tester ayudará al desarrollador con las mejores herramientas de des
   - Skill: Soluciones y estrategias de calidad
 
 Y probablemente habrá más.
+
+## Testing
+
+### Presupuesto, Recursos, Tiempo y Actividades Clave
+
+Cuando estamos desarrollando un software, tratamos de que esté listo para una fecha indicada. Pero la realidad es que muchas veces se alarga la espera por cuestiones humanas.
+
+El ciclo de vida del software es:
+
+1. Definición de necesidades
+2. Análisis
+3. Diseño
+4. Codificación
+5. Pruebas
+6. Validación
+7. Mantenimiento y evolución
+
+Cada una de estas etapas puede tener sus pruebas.
+
+**Ejemplo**: Análisis -> "El usuario puede iniciar sesión".
+
+- ¿Cuántos usuarios pueden iniciar sesión?
+- ¿Qué debería hacer el software tanto si inicia como si no inicia sesión?
+
+Debemos tomar en cuenta estos detalles.
+
+**Ejemplo**: Diseño -> Crear la pantalla de login/registro, formulario.
+
+- ¿Cuántos caracterés aceptará para el nombre? ¿Cuántos para el apellido?
+- ¿Solo aceptará letras o también otros símbolos como "#$%123"? ¿Pueden estar los campos vacíos?
+- ¿Qué pasará si los datos son correctos? ¿Qué pasará si son incorrectos?
+
+**Ejemplo**: Código -> Podemos tener módulos, funciones y bases de datos. Además de tener:
+
+- Front end -> Normalmente tarda más que el backend y no podemos terminarlo de construir sin que el backend esté construido.
+- Back end -> Podemos probar apis, bases de datos.
+
+**Ejemplo**: Pruebas -> Podemos hacer pruebas de cómo se envía la información a la interfaz, de cómo el usuario interactura con el software, de los distintos dispositivos usando el software. Las pruebas están comprobando los requerimientos del cliente.
+
+Las pruebas de validación o de aceptación son en donde el cliente nos dirá que aprueba lo que hemos desarrollado. Una buen práctica es mostrar nuestros avances para tener su feedback. Una mala práctica es esperar hasta el final.
+
+### Estrategia de pruebas
+
+Todos los testers necesitan saber por dónde comenzar.
+
+2 buenas preguntas:
+
+1. ¿Qué problema tenemos actualmente?
+2. ¿O qué problemas debemos evitar?
+
+Escenarios y contextos de las pruebas:
+
+- Seguridad
+- Arquitectura
+- Performance
+- Usabilidad
+- Escalabilidad
+
+### Testing en desarrollo de software
+
+No es lo mismo el testing que el checking
+
+Testing: exploración de una idea. Aprender cómo sucede un flujo, cómo se generan datos, y que esto te genere nuevos resultados. Esto nunca termina.
+
+Cheking: es cuando ya concoces algo y solamente verificas que siga ocurriendo. Es bueno para verificar.
+
+Es importante no confundir estos 2 términos.
+
+Las estrategias de cheking son:
+
+- Solo se ejecutan si ... sucede algo más. *(ejemplo)*
+- Se ejecutan cada que ... inserto nuevo código o datos. *(ejemplo)*
+- Se ejecutan de manera programada.
+
+#### Errores comunes durante la ejecución
+
+- Pruebas duplicadas
+- Pruebas similares
+- Pruebas sin valor agregado
+- Pruebas caducadas
+
+Distinguir entre testing y cheking te lleva hacia la automatización.
+
+La automatización de pruebas consiste en el uso de **software especial** para controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. Sin embargo, se trata de un **cheking repetitivo y atuomatizado**.
+
+#### Desventajas del cheking mal empleado
+
+- Pobre cobertura de pruebas
+- Falta de actualización
+- Mal manejo de versiones
+
+#### Ventajas de cheking bien empleado
+
+- Correr pruebas en paralelo o en múltiples plataformas
+- Reducción de error humano
+- Probar gandes cantidades de datos
+
+Por otro lado, cuando ya queremos hablar de  **Integración continua y Liberación Continua**, entonces la **automatización** es la solución definitiva para la eficiencia del equipo de desarrollo digital y equipos DevOps.
+
+### Testing ágil
+
+Testing ágil involucra a todos los miembros de un equipo ágil multifuncional, en el cual el rol del tester es el de un experto multifuncional, que garantiza se entregue valor de negocio deseado al cliente a un ritmo sostenible y continuo.
+
+- El testing es de "todo el equipo"
+- El Testing puede ser independiente (opcional)
+- Integración continua
+- Desarrollo guiado por pruebas (Test Driven Development - TDD)
+- Desarrollo guiado por comportamiento (Behaviour Driven Development - BDD)
+- Desarrollo guiado por pruebas de aceptación (Acceptance Test Driven Development - ATDD)
+
+**Ejemplo de historias**:
+
+Sesión de usuario: Nueva característica -> El usuaro puede **agregar** una foto a su perfil
+
+- Sesión de usuario
+  - Componentes
+    - Hay foto
+    - No hay foto
+    - Actualizaciones
+    - Eliminar
+    - Editar
+  - Integraciones
+    - Repositorio
+    - Accesos internos
+    - Accesos externos
+  - Aceptación de usuario
+    - Formatos de imagen (jpe, jpeg, png)
+    - Resolución y/o peso máximo
+
+### Niveles de pruebas
+
+- Pruebas de componentes -> Por ejemplo botontes o formularios
+- Pruebas de integración -> Cómo se comunican los componentes en toda la app y cómo viajan los datos
+- Prueba de sistema -> Hay que tomar en cuenta el contexto
+- Prueba de aceptación -> Cuando le vamos a entregar el producto al cliente
+
+### Tipos de pruebas
+
+Independientemente de la profundidad de la prueba, aquí nos enfocaremos en las técnicas que vamos a emplear para tratar de encontrar los defectos.
+
+1. Pruebas funcionales: Se entiende como las Funcionalidades del Sistema como "lo que el sistema hace".
+2. Pruebas no funcionales: El objetivo de esta es probar "como funciona el sistema". -> UX y usabilidad, por ejemplo.
+3. Pruebas estructurales: Para poder llevar a cabo estas pruebas, normalmente el tester debe tener conocimientos acerca de la tecnología y el stack que se está empleando.
+4. Pruebas de manejo de cambios: Es probar nuevamente un componente ya probado para verificar que no ha sido impactado por actualizaciones.
+
+### Pruebas estáticas y dinámicas
+
+> **Las pruebas dinámicas** se enfocan principalmente en comportamientos externos visibles durante la ejecución del software.
+> **Las pruebas estáticas** se basan en la examinación manual de los elementos que conforman la construcción del software.
+
+Elementos:
+
+- Contratos, planes y calendario del proyecto, así como su presupuesto.
+- El análisis de requerimientos
+- Especificaciones o reglas de negocio
+  - Técnicos
+  - Seguridad
+- Las definiciones de:
+  - Historias de usuario
+  - Criterios de Aceptación
+  - Mockups
+- El diseño de la arquitectura
+- Las pruebas (Testware), puntos de verificación CI
+- Guías de usuario
+- Evaluación/revisión del código
+
+Beneficios:
+
+- Detectar y corregir defectos de manera más eficiente
+- Identificar y priorizar la ejecución de pruebas en etapas posteriores
+- Prevenir defectos
+  - Que no son fácilmente detectables durante las pruebas dinámicas
+  - Durante la etapa de análisis y diseño
+- Cubrir aspectos como:
+  - Inconsistencias, ambigüedades, contradicciones, definiciones inexactas, requerimientos redundantes
+- Reducir el retrabajo e incrementar la productividad
+- Reducir el costo y el tiempo
+- Mejorando la comunicación entre todos los miembros del equipo
+
+### Definición y diseño de pruebas
+
+¿Qué hace un tester?
+
+1. Encontrar problemas
+2. Documentar problemas
+3. Comunicar problemas
+
+Si no encuentras problemas antes de que el producto sea entregado el cliente, entonces su testing es ineficiente.
+
+Si cuando encuentras problemas, no sabes documentar y reproducir los pasos correctos, el testing genera retrabajo y sube el costo.
+
+Si como representate de la calidad del producto no sabes argumentar y proteger los intereses del negocio o los clientes, entonces el testing no agrega valor.
+
+[Archivo de Google Sheets](https://docs.google.com/spreadsheets/d/1DScBhWbA8qfRsare8SSJ2AOGAj_zjuPJ-Pe4RyN2IQg/edit?usp=sharing)
