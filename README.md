@@ -354,3 +354,83 @@ Si cuando encuentras problemas, no sabes documentar y reproducir los pasos corre
 Si como representate de la calidad del producto no sabes argumentar y proteger los intereses del negocio o los clientes, entonces el testing no agrega valor.
 
 [Archivo de Google Sheets](https://docs.google.com/spreadsheets/d/1DScBhWbA8qfRsare8SSJ2AOGAj_zjuPJ-Pe4RyN2IQg/edit?usp=sharing)
+
+## Gestión, monitoreo y control
+
+### Caja Blanca, Gris y Negra
+
+La caja se refiere al contenido del software.
+
+- Negra -> No conocemos su código ni arquitectura ni cómo fue construido. Solamente la noción de la interfaz.
+- Blanca -> Puedo ver todo lo que hay dentro, incluso puedo ser parte del equipo que desarrolló el software.
+- Gris -> No conozco el código, pero veo cómo se transmiten los datos.
+
+*Técnicas de pruebas*:
+
+- Caja negra
+  - Partición de equivalencia
+  - Valores límite
+  - Tabla de decisiones
+  - Transición de estados
+  - Casos de uso
+- Caja gris
+  - Casos de negocio
+  - Pruebas End to End
+  - Pruebas de integración
+- Caja blanca
+  - Cobertura de declaración
+  - Cobertura de decisiones
+
+Las prubeas "End to End" consisten en: Yo como usuario hago cosas y la información se verá reflejada no en mí, sino en otra parte de front end.
+
+Las pruebas de integración son las respuestas y la comunicación de cómo fluyen los datos entre diferentes servicios.
+
+### Gestión, monitoreo y control: Monitoreo y Seguimiento
+
+La gestión de pruebas tiene varias etapas:
+
+- Planeación de pruebas
+  - > Definición de Objetivos de las pruebas, alcance de las mismas, las técnias de pruebas que se llevarán a cabo, junto con las estimación y definición de fechas de entrega, así como los criterios de salida.
+- Monitoreo y control de pruebas
+  - > Durante el Monitoreo se va midiendo y comparando los resultados de las métricas, y entonces durante el CONTROL se toman acciones para alcanzar el objetivo del plan y los criterios de salida
+- Análisis de pruebas
+  - > Cuando estamos analizando las pruebas para nuestro proyecto, necesitamos determinar qué debemos probar, obviamente basados en las prioridades de cobertura
+- Diseño de pruebas
+  - Diseño de casos de alto nivel
+  - Diseñar y priorizar las pruebas
+  - Identificar los datos de pruebas
+  - Identificar el entorno de pruebas - infraestructura y herramientas
+  - Hacer una trazabilidad entre pruebas y sus condiciones
+- Implementación de pruebas
+  - > Para poder prepararnos para hacer las pruebas, primero tenemos que asegurarnos que tenemos todo lo necesario para ello
+- Ejecución de pruebas
+- > Durante esta etapa, las suites de pruebas se ejecutan de acuerdo con el programa de ejecución de las pruebas
+- Finalización de las pruebas
+  - Defectos con el estatus correcto
+  - Reporte para comunicar los resultados de las pruebas
+  - Finalizar y archivar ambiente de pruebas y sus datos
+  - Entregar el Testware al equipo de mantenimiento de pruebas
+  - Analizar lecciones aprendidas para futuras versiones
+  - Recopilar la información para ayudar a mejorar la madurez del proceso de prueba
+
+### Roles y Responsibilidades
+
+1. Especialista en pruebas manuales -> se enfoca en la estrategia, definición, ejecución y cobertura de pruebas para cumplir los requerimientos, echando mano de cualquier técnica para obtener información suficiente y así cumplir con las asignaciones correspondientes.
+2. Especialista en pruebas técnicas -> trabaja muy de cerca con el tester manual, mientras que el tester manual define las pruebas, el tester técnico acelera la capacidad de ejecución de las pruebas. Esto lo hace implementando herramientas que permitan la automatización de pruebas, o la correcta selección de datos de pruebas, o el monitoreo de la ejecución de las pruebas.
+3. Líder del equipo de pruebas -> generalmente dentro de sus responsabilidad es volverse un facilitador de servicios, información y herramientas para el equipo de pruebas, para poder estimar presupuestos, recursos y tiempos respecto al plan de desarrollo de software.
+4. Ingeniero de calidad -> ya no solamente está al pendiente del producto y los procesos, comienza a involucrarse más con el negocio, ayudando tanto a testers como cualquier otro miembro del equipo a llevar cabo pruebas que reduzcan, en todas las etapas del ciclo de vida del software, el error humano.
+
+### Roles y responsabilidades en acción
+
+ndependientemente del rol, un tester participa de todas las etapas del proceso de desarrollo de software, colaborando para asegurar la máxima calidad del producto. Su perfil conjuga un conjunto de habilidades con el conocimiento del negocio, de la aplicación bajo prueba y de cómo planificar, diseñar, ejecutar y administrar las pruebas.
+
+> Un tester investiga un producto de software con el objetivo de obtener información acerca de su calidad y del valor que representa para quienes lo utilizan.
+
+*Habilidades de un tester*:
+
+- Capacidad de abstracción y modelado para entender y simular el comportamiento del sistema bajo prueba.
+- Comunicación para interactuar con todos los miembros del equipo.
+- Pensamiento lateral para generar ideas e imaginar los problemas que podrían existir.
+- Pensamiento crítico para observar y evaluar, hacer deducciones y vincular lo observado con los requerimientos de calidad de la empresa.
+- Pragmatismo. Ser lo suficiente abierto para poner en práctica las ideas de los demás o propias, adecuar las técnicas y el esfuerzo al alcance del proyecto.
+- Trabaja en equipo, sabe interactuar para lograr el mayor beneficio entre todos los involucrados.
