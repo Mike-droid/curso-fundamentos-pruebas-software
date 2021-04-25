@@ -434,3 +434,69 @@ ndependientemente del rol, un tester participa de todas las etapas del proceso d
 - Pensamiento crítico para observar y evaluar, hacer deducciones y vincular lo observado con los requerimientos de calidad de la empresa.
 - Pragmatismo. Ser lo suficiente abierto para poner en práctica las ideas de los demás o propias, adecuar las técnicas y el esfuerzo al alcance del proyecto.
 - Trabaja en equipo, sabe interactuar para lograr el mayor beneficio entre todos los involucrados.
+
+## Gestión de bugs
+
+### Ejercicios
+
+Preguntas:
+
+1. Es el encargado de hacer coaching de calidad en toda la empresa -> Ingeniero de calidad
+2. Es el responsable de emplear herramientas que automaticen o aceleren las ejecuciones de las pruebas -> Tester técnico
+3. Es el responsable de asegurarse de la cobertura de pruebas y nuevos escenarios -> Tester manual
+4. Es el facilitador del equipo que se asegura de implementar lo necesario para que se ejecuten las pruebas -> Líder de pruebas
+
+### Retrabajo
+
+Es importante tener un monitoreo sobre el trabajo para saber qué se hizo, qué se está haciendo, qué se hará después. Podemos saber cómo hemos avanzado. El dashboard puede ser una herramienta útil que mantiene informado a todo el equipo acerca del estatus de las pruebas.
+
+*Acciones de control*:
+
+- Si identificamos un riesgo
+- Si identificamos falta de ambientes
+- Si el criterio de salida no se cumple
+
+- Resultados de pruebas -> Cuántas se han ejecutado, cuántas sí han pasado las pruebas y cuántas no, cuántas tuvieron defectos, etc
+- Desempeño del equipo de testing
+
+Retrabajo:
+> Esfuerzo adicional necesario para la correción de una incorformidad en algún producto. El problema que surge con el retrabajo es obvio: es un esfuerzo adicional que no puede ser cobrado al cliente, pero que es necesario para que este quede conforme con lo que hemos hecho para él.
+
+Problemas:
+
+- Falta o mala documentación
+- Falta de capacitación o dominio en las herramientas utilizadas
+- Falta de capacitación o dominio en el software a desarrollar
+- Falta de comunicación
+
+Puedes trabjar sobre la gestión del proyecto con [Jira](https://www.atlassian.com/es/software/jira) y/o con [Easy Redmine](https://www.easyredmine.com/es/)
+
+### Sistemas de seguimiento de bugs
+
+**Razones por las que aparecen defectos**:
+
+- Hay presión de tiempo en la entrega del software
+- Descuidos en el diseño
+- Inexperiencia o falta de conocimiento
+- Falta de comunicación en los requerimientos
+- Diseño complejo de código
+- Desconocimiento de las tecnologías usadas
+
+**¿Cómo crear un proceso de gestión de bugs?**:
+
+- ¿Qué debe de hacer la persona que encuentre un defecto?
+- ¿En qué herramienta debe documentar el defecto?
+- ¿Cómo vamos a almacenar la información?
+- ¿Qué información requiere el equipo de desarrollo para poder resolver un defecto?
+- Cuáles son los estatus que se manejan para que fluya la resolución del defecto?
+- ¿Cuáles son los criterios de aceptación de cierre del defecto?
+
+**Repositorio y monitoreo de bugs**: Una vez instaurado el proceso de gestión de bugs, también se debe precisar quién tiene acceso a los bugs y cuales son los permisos que tiene, por cuánto tiempo se almacenan, etc.
+
+### Defectos y sugerencias
+
+Un defecto es aquello que no cumple los requerimientos, ya sean funcionales, de diseño, de arquitectura y es la consecuencia de un error humano.
+
+Una sugerencia podría ser; cómo la experiencia del usuario se ve afectada.
+
+**¿Cómo reportar un defecto/sugerencia?**: Excel o Google sheets pueden ayudar a hacer esto. [Ejemplo](https://docs.google.com/spreadsheets/d/1DScBhWbA8qfRsare8SSJ2AOGAj_zjuPJ-Pe4RyN2IQg/edit?usp=sharing)
