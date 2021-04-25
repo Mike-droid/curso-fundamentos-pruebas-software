@@ -500,3 +500,109 @@ Un defecto es aquello que no cumple los requerimientos, ya sean funcionales, de 
 Una sugerencia podría ser; cómo la experiencia del usuario se ve afectada.
 
 **¿Cómo reportar un defecto/sugerencia?**: Excel o Google sheets pueden ayudar a hacer esto. [Ejemplo](https://docs.google.com/spreadsheets/d/1DScBhWbA8qfRsare8SSJ2AOGAj_zjuPJ-Pe4RyN2IQg/edit?usp=sharing)
+
+## Depuración
+
+### ¿Qué es la depuración?
+
+El testing sirve para encontrar defectos, el debugging sirve para localizarlos y entender cómo funciona el defecto.
+
+> Uno de los principales problemas al desarrollar aplicaciones son los errores de ejecución
+
+Se dice que por cada 10 líneas de código, hay un defecto.
+
+Los beneficiarios de hacer debugging son; el programador, el tester y el analista o investigador.
+
+*Síntomas de errores*:
+
+- Obtención de salida de errores
+- Realización de operaciones fuera de lo normal
+- No finalización del programa (ciclos infinitosm etc)
+- Caídas del programa
+
+El debugger permite:
+
+- Ejecutar línea a línea
+- Detener la ejecución temporalmente
+  - En una línea de código concreta
+  - Bajo determinadas condiciones
+- Visualizar el contenido de las variables
+- Cambiar el valor del entorno de ejecución para poder ver el efecto de una corrección en el programa
+
+Herramientas:
+
+- Mensajes de advertencia
+- Estándares de compilación
+- Verificación sintáctica y lógica
+
+### Técnicas de depuración
+
+Las técnicas de reacción no deben ser *reactivas* sino **preventivas**. El debugging debería ser la última técnica que utilizamos. Si hacemos buenas prácticas, lo estaremos usando pocas veces.
+
+Técnias:
+
+- Debugging (Principiante)
+  - Observar valores de variables
+  - Detner temporalmente la aplicación
+- Logs (Intermedio)
+  - Almacenar los valores
+  - Rastreo de información
+- Historial (Avanzado)
+  - Capacidad de análisis forense
+  - Comparar valores
+  - Agrupar información
+- Monitor reportes (Sayayin)
+  - Prevenir ataques o fallas
+  - Observar anomalías
+  - Acelerar tiempos de respuesta
+
+**Desventajas de no usar logs**:
+
+- Visibilidad nula de errores
+- Metodología de trabajo no estandarizada
+- Accesos e información descentralizada
+- Incremento del tiempo de respuesta
+
+**Ventajas de generar un historial/reporte**:
+
+- Aplicar técnicas de Machine Learning
+- Mejorar la gestión y el control de la información
+- Detectar amenazas de red o virus
+- Prevenir fugas de información, así como comportamientos inadecuados
+
+Fases del debugging:
+
+1. Encontrar el error
+   1. Ir al módulo que falla
+   2. Establecer breakpoints
+      - En asignación de valores
+      - Procesamiento de valores
+      - Cambio de estados
+   3. Diseñar una matriz de pruebas
+   4. Establecer los datos de prueba
+   5. Comenzar a depurar
+2. Corregir el error
+
+### Pruebas de verificación
+
+- Tratan de reproducir el escenario fallido con los datos usados
+- Se buscan nuevos escenarios donde se utilicen valores relativos siguiendo flujos adicionales
+  - Otras plataformas
+  - Otros sistemas operativos
+  - Otros exploradores
+  - Otros dispositivos
+
+*Pruebas de regresión*:
+
+- La matriz de pruebas durante el debugging nos permite identificar módulos impactados que requieren regresión
+- Las pruebas de regresión ya fallaron la primera vez al no tener suficiente cobertura, debemos incorporar los nuevos datos de prueba
+- Y si se puede otros más
+
+***Documentación***: Se procura actualizar documentación con:
+
+- Comentarios en el código
+- Documentación técnica
+- Pruebas unitarias
+- Pruebas específicas
+- Matrices de pruebas
+- Plan de pruebas
