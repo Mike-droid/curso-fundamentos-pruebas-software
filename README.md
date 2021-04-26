@@ -606,3 +606,47 @@ Fases del debugging:
 - Pruebas específicas
 - Matrices de pruebas
 - Plan de pruebas
+
+## Bases de la automatización de pruebas
+
+### Automatización de pruebas
+
+¿Cuándo estamos listos para automatizar?
+
+- Tenemos pruebas repetitivas pero no están identificadas
+- Buscamos optimizar la ejecución de pruebas pero solo escribimos scripts sin agrupar
+- Hemos definido un framework pero no se estandarizan las pruebas
+
+Podemos automatizar:
+
+- Pruebas unitarias
+- Pruebas de integración
+- Pruebas funcionales o de aceptación
+
+**Test Driven Development**: Es una técnica de diseño e implementación de software incluido dentro de la metodología XP (Extreme Programming).
+
+Esta técnica nos permite obtener una **cobertura de pruebas muy alta**, aunque es importante destacar que este índice no indica que tengamos una buena calidad de test. Por lo tanto, no debe ser un valor en el que fijarse únicamente.
+
+Proceso TDD:
+
+1. Escribimos una prueba
+2. Ejecutamos la prueba: Falla
+3. Se escribe el código
+4. Ejecutamos la prueba: Pasa
+
+**Behavior Driven Development**: BDD es el desarrollo guiado por el comportamiento. Es un proceso que proviene de la evolución del TDD.
+
+En BDD también se escriben pruebas antes del código, pero en vez de ser pruebas unitarias son pruebas que van a verificar que el comportamiento del código es correcto desde el punto de vista del negocio.
+
+> Entre más claros los casos de prueba, más eficiente la cobertura de pruebas. Entre menos errores o ambigüedad tengan los casos de pruebas, son más fácil de ejecutar o automatizar.
+
+### Gherkin
+
+> Gherkin es un lenguaje de texto plano con estructura. Está diseñado paar ser fácil de aprender y ser entendido por todos.
+
+Ventajas:
+
+- Simple
+- Palabras claves
+- Estandariza los casos de uso
+- Reduce el tiempo de diseño
